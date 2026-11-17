@@ -4,3 +4,4 @@ projects/*/out/
 *.log
 
 node_modules
+projects/*/*.mp4

@@ -1,6 +1,6 @@
 import React from 'react';
 import {AbsoluteFill,Audio,Composition,Img,Sequence,registerRoot,staticFile,useCurrentFrame} from 'remotion';
-import captions from './captions.json';
+import captions from './captions-word.json';
 import {Lia} from './rig';
 const OUTLINE='#17393e',FPS=30,DURATION=70;
 const clamp=x=>Math.min(1,Math.max(0,x));const smooth=x=>{x=clamp(x);return x*x*(3-2*x)};const mix=(a,b,x)=>a+(b-a)*x;const shadow={filter:'drop-shadow(0 4px 5px #092b3560)'};
@@ -72,7 +72,7 @@ function Video(){
  <Action i={i} t={t} local={local}/>
  <svg width="720" height="1280" style={{position:'absolute',inset:0,pointerEvents:'none'}}>{Array.from({length:9},(_,j)=><circle key={j} cx={55+j*77+Math.sin(t*.3+j)*12} cy={200+(j*83+t*13)%700} r={1.5+j%3} fill="#fff0be" opacity={.15+.1*Math.sin(t+j)}/>)}</svg>
  <div style={{position:'absolute',top:135,left:52,right:105,textAlign:'center',color:'#fff7de',fontFamily:'DejaVu Serif',fontWeight:700,fontSize:i===7?39:45,lineHeight:1.13,textShadow:'0 3px 1px #173d43,0 4px 14px #062c38'}}>{s.title}</div>
- {cap&&<div style={{position:'absolute',left:52,right:108,top:1000,minHeight:125,display:'flex',alignItems:'center',justifyContent:'center',textAlign:'center',fontFamily:'DejaVu Sans',fontSize:33,fontWeight:700,lineHeight:1.3,color:'#fff7df',textShadow:'-2px -2px #102e3b,2px 2px #102e3b,-2px 2px #102e3b,2px -2px #102e3b,0 4px 12px #102e3b'}}>{cap.text}</div>}
+ {cap&&<div style={{position:'absolute',left:52,right:108,top:1000,minHeight:125,display:'flex',flexWrap:'wrap',alignContent:'center',gap:'0 3px',alignItems:'center',justifyContent:'center',textAlign:'center',fontFamily:'DejaVu Sans',fontSize:33,fontWeight:700,lineHeight:1.3,color:'#fff7df',textShadow:'-2px -2px #102e3b,2px 2px #102e3b,-2px 2px #102e3b,2px -2px #102e3b,0 4px 12px #102e3b'}}>{cap.words.map((word,index)=><span key={index} style={{color:t>=word.start&&t<word.end?'#ffda77':'#fff7df',margin:'0 5px',display:'inline-block'}}>{word.text}</span>)}</div>}
  <div style={{position:'absolute',left:55,right:110,bottom:105,height:3,background:'#ffffff30'}}><div style={{height:3,width:`${t/70*100}%`,background:s.color}}/></div>
  </div><AbsoluteFill style={{background:'#12383d',opacity:smooth((t-69.2)/.8)}}/>
  </AbsoluteFill>

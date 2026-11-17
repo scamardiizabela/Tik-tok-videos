@@ -38,3 +38,15 @@ O repositório remoto consultado contém SKILL.md e README.md, mas não contém 
 - https://pmc.ncbi.nlm.nih.gov/articles/PMC4387693/ — revisão sobre cosméticos capilares, condicionamento, atrito e proteínas hidrolisadas.
 - https://www.aad.org/public/everyday-care/hair-scalp-care/hair/healthy-hair-tips — práticas gerais de cuidado.
 As categorias comerciais se sobrepõem e os efeitos dependem da formulação. Não representar a ilustração como demonstração de eficácia.
+
+## Finalização — 17/11/2026
+O bloqueio anterior foi resolvido com o Chrome Headless Shell instalado por
+`npx remotion browser ensure`; o Chromium do sistema continua incompatível.
+Foi gerado o MP4 de 70 s em 720 × 1280 a 30 fps (8,5 MB).
+As legendas agora usam tempos acústicos individuais, com correções de grafia
+registradas por `prepare-captions.py` e destaque amarelo na palavra corrente.
+Foram revisados 140 quadros amostrados do próprio MP4 e o destaque em tamanho
+original. A faixa exportada foi decodificada e conferida por transcrição; sem
+clipping. Não se alega escuta humana integral ou aprovação final da usuária.
+As propostas de maior variedade de planos e separação integral das camadas
+continuam sendo melhorias futuras; não foram apresentadas como concluídas.
