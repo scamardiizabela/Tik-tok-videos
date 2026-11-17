@@ -1,0 +1,6 @@
+node_modules/
+projects/*/qa/
+projects/*/out/
+*.log
+
+node_modules
