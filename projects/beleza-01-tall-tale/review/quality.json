@@ -1,0 +1,226 @@
+{
+  "render_sha256": "",
+  "reviewer": "director independent agent",
+  "version": "v3-stills",
+  "overall_status": "not-verified",
+  "static_layout_score": 8.5,
+  "static_rig_score": 8.6,
+  "raw_environment_art_score": 8.8,
+  "limitations": [
+    "MP4 final ainda não inspecionado por este revisor.",
+    "Notas estáticas editoriais subjetivas não são média audiovisual por cena.",
+    "Sem escuta perceptual: métricas técnicas não comprovam naturalidade ou mixagem.",
+    "Não foi comprovada equivalência ao acabamento de Kurzgesagt."
+  ],
+  "scenes": [
+    {
+      "id": "00",
+      "status": "not-verified",
+      "score": null,
+      "static_layout_score": 8.5,
+      "evidence_type": "still-and-source",
+      "evidence": [
+        "frame-1.8.png",
+        "sha256:dd824a9c8786dcaaa71f7a1a535ddb2dc3b2743bc7a49e27051c7602ca880c3e",
+        "Três potes e pergunta legíveis; contato do pote na mão; pés apoiados na bancada."
+      ],
+      "defects": [],
+      "rechecked": true,
+      "pending": [
+        "motion",
+        "perceptual-word-alignment",
+        "sound-listening"
+      ]
+    },
+    {
+      "id": "01",
+      "status": "not-verified",
+      "score": null,
+      "static_layout_score": 8.5,
+      "evidence_type": "still-and-source",
+      "evidence": [
+        "frame-5.8.png",
+        "sha256:d941dac2b7a1dea437b0a5ccc6245538e1d622157e1d146f3eefb2459ac28d1a",
+        "Três funções separadas com código visual coerente; apoio corrigido na bancada."
+      ],
+      "defects": [],
+      "rechecked": true,
+      "pending": [
+        "motion",
+        "perceptual-word-alignment",
+        "sound-listening"
+      ]
+    },
+    {
+      "id": "02",
+      "status": "not-verified",
+      "score": null,
+      "static_layout_score": 8.5,
+      "evidence_type": "still-and-source",
+      "evidence": [
+        "frame-13.4.png",
+        "sha256:f487c8aa34e987872355c07a32ee55579519430a0d58c3ec92e849dd2d730e64",
+        "Gotas e fibra legíveis; texto curto; plataforma sob os pés."
+      ],
+      "defects": [],
+      "rechecked": true,
+      "pending": [
+        "motion",
+        "perceptual-word-alignment",
+        "sound-listening"
+      ]
+    },
+    {
+      "id": "03",
+      "status": "not-verified",
+      "score": null,
+      "static_layout_score": 8.5,
+      "evidence_type": "still-and-source",
+      "evidence": [
+        "frame-19.5.png",
+        "sha256:07f15b1f8851e6f53f13b99123feb7a5f9ace337fca4fbbf29bb8080137331d7",
+        "Frasco conta-gotas elimina pseudoquímica e ambiguidade do balde."
+      ],
+      "defects": [],
+      "rechecked": true,
+      "pending": [
+        "motion",
+        "perceptual-word-alignment",
+        "sound-listening"
+      ]
+    },
+    {
+      "id": "04",
+      "status": "not-verified",
+      "score": null,
+      "static_layout_score": 8.5,
+      "evidence_type": "still-and-source",
+      "evidence": [
+        "frame-24.5.png",
+        "sha256:8596dbc30c3563e9f45502bda0e31dc24aad6cf9000265856957a7242fd8aa69",
+        "Fibras menores com escamas/sombra e margem direita; menos texto."
+      ],
+      "defects": [],
+      "rechecked": true,
+      "pending": [
+        "motion",
+        "perceptual-word-alignment",
+        "sound-listening"
+      ]
+    },
+    {
+      "id": "05",
+      "status": "not-verified",
+      "score": null,
+      "static_layout_score": 8.5,
+      "evidence_type": "still-and-source",
+      "evidence": [
+        "frame-30.png",
+        "sha256:65d00157238136102501bc4aa7625c06160a8dfa97c1e6183ec3fcd7337807b1",
+        "Dose e pote distinguíveis; texto curto; pote na mão."
+      ],
+      "defects": [],
+      "rechecked": true,
+      "pending": [
+        "motion",
+        "perceptual-word-alignment",
+        "sound-listening"
+      ]
+    },
+    {
+      "id": "06",
+      "status": "not-verified",
+      "score": null,
+      "static_layout_score": 8.5,
+      "evidence_type": "still-and-source",
+      "evidence": [
+        "frame-37.3.png",
+        "sha256:9ff357212a642607192e4268ad41d719cbef3155f8a2f91595b582494844f298",
+        "Proteínas identificáveis e fibra menor; rig apoiado."
+      ],
+      "defects": [],
+      "rechecked": true,
+      "pending": [
+        "motion",
+        "perceptual-word-alignment",
+        "sound-listening"
+      ]
+    },
+    {
+      "id": "07",
+      "status": "not-verified",
+      "score": null,
+      "static_layout_score": 8.5,
+      "evidence_type": "still-and-source",
+      "evidence": [
+        "frame-44.8.png",
+        "sha256:6a15c445820790718d61328dc26540804b075fbbab2faa2b46b51a85c526e1d1",
+        "Bifurcação permanece aberta; temporariedade inequívoca."
+      ],
+      "defects": [],
+      "rechecked": true,
+      "pending": [
+        "motion",
+        "perceptual-word-alignment",
+        "sound-listening"
+      ]
+    },
+    {
+      "id": "08",
+      "status": "not-verified",
+      "score": null,
+      "static_layout_score": 8.5,
+      "evidence_type": "still-and-source",
+      "evidence": [
+        "frame-50.4.png",
+        "sha256:2dde24e6d27e62733fb3fe183ab6855760c45379f0cc87aee2bf979c0e508494",
+        "Um pote como alvo central; instrução curta."
+      ],
+      "defects": [],
+      "rechecked": true,
+      "pending": [
+        "motion",
+        "perceptual-word-alignment",
+        "sound-listening"
+      ]
+    },
+    {
+      "id": "09",
+      "status": "not-verified",
+      "score": null,
+      "static_layout_score": 8.5,
+      "evidence_type": "still-and-source",
+      "evidence": [
+        "frame-57.png",
+        "sha256:a7712e928fc5ca9d86f72682f97de43aa00b3dc582575ff2ffaa155863b433cf",
+        "Modo de uso integrado ao verso de frasco, hierarquia nítida."
+      ],
+      "defects": [],
+      "rechecked": true,
+      "pending": [
+        "motion",
+        "perceptual-word-alignment",
+        "sound-listening"
+      ]
+    },
+    {
+      "id": "10",
+      "status": "not-verified",
+      "score": null,
+      "static_layout_score": 8.5,
+      "evidence_type": "still-and-source",
+      "evidence": [
+        "frame-65.8.png",
+        "sha256:bce6ca1d45fb3b46506374db76848836c0d772e705157100c25d9c2b5ee8f3ec",
+        "CTA cabe no badge, rosto feliz e bancada dão fechamento."
+      ],
+      "defects": [],
+      "rechecked": true,
+      "pending": [
+        "motion",
+        "perceptual-word-alignment",
+        "sound-listening"
+      ]
+    }
+  ]
+}

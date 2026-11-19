@@ -1,3 +1,14 @@
+# Atualização de direção — 19/11/2026
+
+Esta seção prevalece sobre registros antigos abaixo. Iza aprovou a protagonista A: adulta, curiosa e divertida, cabelo castanho ondulado em coque com mechas soltas, presilha amarela, blusa lilás e lenço amarelo. Em seguida aprovou a arte e pediu os cenários.
+
+Direção autorizada: arte original gerada com Criar imagem; separar personagem em peças e construir rig; cenários por contexto narrativo, camadas 2.5D animadas; vídeo inteiro ilustrado; ações didáticas sincronizadas à locução/legenda; hook e CTA humanizados; equipe com animador e diretor crítico; meta editorial 8,5 por cena baseada em evidência, nunca nota inventada. Ignorar Lia. Manter roteiro e ideia do episódio 01. Guardar código, assets, áudio, skills e projetos separados neste repositório.
+
+Estilo-base Tall Tale adaptado para beleza. A usuária autorizou trabalhar autonomamente e publicar o projeto neste GitHub. Não publicar em redes sociais sem pedido específico. Qualidade final ainda depende de revisão do vídeo; aprovação da personagem não é aprovação automática do render.
+
+---
+## Registro anterior (histórico)
+
 # IA Memory — TikTok: beleza e autocuidado
 Atualizado em 12/11/2026. Escopo exclusivo: novos vídeos do TikTok de Iza. Não aplicar ao Boa Mesa ou à XM.
 

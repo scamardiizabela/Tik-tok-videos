@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@remotion/bundler": "^4.0.545",
+    "@remotion/cli": "^4.0.545",
+    "@remotion/renderer": "^4.0.545",
+    "@sparticuz/chromium": "^153.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "remotion": "^4.0.545"
+  }
+}

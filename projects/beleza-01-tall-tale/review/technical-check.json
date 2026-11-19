@@ -1,0 +1,19 @@
+{
+  "word_count": 187,
+  "voice_duration": 67.656,
+  "composition_duration": 68.8,
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "fps": 30,
+  "checks": [
+    "timings monotonic and inside audio",
+    "all backgrounds present",
+    "foreground alpha present",
+    "rig pieces nonempty"
+  ],
+  "limits": [
+    "technical checks do not certify perceptual quality or word alignment by listening"
+  ]
+}

@@ -1,0 +1,6 @@
+**/node_modules/
+**/.remotion/
+**/build/
+**/.cache/
+**/review/frames/
+**/tmp/

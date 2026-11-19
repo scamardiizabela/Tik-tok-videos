@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "character": "protagonista A, approved 19/11/2026",
+  "assets": [
+    {
+      "path": "assets/characters/protagonista-a/atlas-v1.png",
+      "sha256": "1aef996ff49761bc964640eb79e1985e4fa4f242ce9ff087ab9b3c4369b1103f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "origin": "Criar imagem, 19/11/2026",
+      "use": "source artwork"
+    },
+    {
+      "path": "assets/environments/beleza-01/00-vanity-v1.png",
+      "sha256": "abb256b6f3e6ee7e4d2b50c60f743fe26f9b03177af955cae524bf9f4ba7ab97",
+      "dimensions": [
+        941,
+        1672
+      ],
+      "mode": "RGB",
+      "origin": "Criar imagem, 19/11/2026",
+      "use": "source artwork"
+    },
+    {
+      "path": "assets/environments/beleza-01/01-hydration-v1.png",
+      "sha256": "cbaf5ee825841c2ea902e831c0c237fdb31abce6bbabdc1ecc3d652311f724a4",
+      "dimensions": [
+        941,
+        1672
+      ],
+      "mode": "RGB",
+      "origin": "Criar imagem, 19/11/2026",
+      "use": "source artwork"
+    },
+    {
+      "path": "assets/environments/beleza-01/02-nutrition-v1.png",
+      "sha256": "398b0a862f46f21524ecff58533c43e601c7121d9bee95a03ff2b17ed82f56b4",
+      "dimensions": [
+        941,
+        1672
+      ],
+      "mode": "RGB",
+      "origin": "Criar imagem, 19/11/2026",
+      "use": "source artwork"
+    },
+    {
+      "path": "assets/environments/beleza-01/03-reconstruction-v1.png",
+      "sha256": "4ac4cf14c6d581a67cb7e312d4ba13236b6ed8a666b98ca1c09081c058448f41",
+      "dimensions": [
+        941,
+        1672
+      ],
+      "mode": "RGB",
+      "origin": "Criar imagem, 19/11/2026",
+      "use": "source artwork"
+    },
+    {
+      "path": "assets/environments/beleza-01/04-selection-v1.png",
+      "sha256": "c5dbe4e8e853b085230274a36d4b9c582022c5ccc8b5c01390900218eee342a2",
+      "dimensions": [
+        941,
+        1672
+      ],
+      "mode": "RGB",
+      "origin": "Criar imagem, 19/11/2026",
+      "use": "source artwork"
+    },
+    {
+      "path": "assets/environments/beleza-01/05-sunset-v1.png",
+      "sha256": "6439b650c49f3620df6367652055a6fb5194b407226b535fd24cfb57d818905f",
+      "dimensions": [
+        941,
+        1672
+      ],
+      "mode": "RGB",
+      "origin": "Criar imagem, 19/11/2026",
+      "use": "source artwork"
+    },
+    {
+      "path": "assets/environments/beleza-01/environment-atlas-v1.png",
+      "sha256": "4ada777d6797af21f645ffe176074f8c29f0cf61a552604c7f8cca21992685a8",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "origin": "Criar imagem, 19/11/2026",
+      "use": "source artwork"
+    },
+    {
+      "path": "assets/environments/beleza-01/foreground-atlas-v1.png",
+      "sha256": "f1da45bc44bb056826a8b551f3f8aa3e50857f09cb4baa3a16ee6d069e1e40ae",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "origin": "Criar imagem, 19/11/2026",
+      "use": "source artwork"
+    }
+  ],
+  "derivatives": "projects/beleza-01-tall-tale/public; prepare-assets.py records extraction; alpha cleanup removes saturated red/magenta artifacts without replacing source",
+  "model_note": "Built-in image generation used; no unverified model-version claim"
+}

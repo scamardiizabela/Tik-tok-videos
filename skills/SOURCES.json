@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-11-19",
+  "search": {
+    "owner": "scamardiizabela",
+    "repositories_visible": [
+      "avariado-catalog",
+      "VIDEO-CESTA-BASICA",
+      "Tik-tok-videos",
+      "boa-mesa-site"
+    ],
+    "queries": [
+      "organizer (owner-scoped code search)",
+      "hooks (owner-scoped code search)",
+      "awesome claude skills (public repository search)",
+      "file-organizer SKILL (public code search)",
+      "social-media-hooks SKILL (public code search)",
+      "viral hooks skill (public repository search)"
+    ],
+    "result": "Não foi identificado o repositório externo exato referido pela usuária; as seleções abaixo são alternativas pesquisadas, não uma identificação confirmada."
+  },
+  "skills": [
+    {
+      "name": "organizer",
+      "status": "original implementation",
+      "consulted": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/file-organizer/SKILL.md",
+      "consulted_blob_sha": "66762b8349d70c3a12643a55b04d39d0ebdc349f",
+      "license_check": "LICENSE na raiz retornou 404; listagem da raiz e da pasta não mostrou licença. Nenhum texto da skill foi copiado.",
+      "authorship": "Implementação original do projeto em pt-BR."
+    },
+    {
+      "name": "social-media-hooks",
+      "status": "local wrapper plus unchanged upstream files",
+      "repository": "https://github.com/rediumvex/viral-hooks-skill",
+      "commit": "e26b339ccf452abf43bb97df54603e4781ae0a8e",
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Roman Knox",
+      "files": [
+        {
+          "path": "upstream/SKILL.md",
+          "blob_sha": "8c489d0eb48447af6ebf3e0297f386b226d5ecb8"
+        },
+        {
+          "path": "upstream/hooks-database.md",
+          "blob_sha": "f0ea804ff341f2f4637de9b5d766b400d4898411"
+        },
+        {
+          "path": "upstream/LICENSE",
+          "blob_sha": "8fc24a760d9931747cadc502483643d42b33b2af"
+        }
+      ],
+      "dependency_note": "O banco upstream atribui parte das estruturas a jakeolschewski/social-media-hooks-database (MIT). A URL LICENSE dessa origem retornou 404; preservada a atribuição upstream sem inventar licença adicional.",
+      "limitations": "Não há comprovação fornecida de taxas de retenção ou validação empírica dos exemplos."
+    },
+    {
+      "name": "project-improvement",
+      "status": "original implementation",
+      "authorship": "Implementação original do projeto em pt-BR.",
+      "limitations": "Exige revisão de artefatos e registro de evidências; não treina o modelo nem garante resultado."
+    }
+  ]
+}

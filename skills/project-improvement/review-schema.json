@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Scene review evidence",
+  "type": "object",
+  "required": ["render_sha256", "reviewer", "scenes"],
+  "properties": {
+    "render_sha256": {"type": "string"},
+    "reviewer": {"type": "string"},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "status", "evidence", "defects"],
+        "properties": {
+          "id": {"type": "string"},
+          "status": {"enum": ["approved", "rejected", "not-verified"]},
+          "score": {"type": ["number", "null"], "minimum": 0, "maximum": 10},
+          "evidence": {"type": "array", "items": {"type": "string"}},
+          "defects": {"type": "array", "items": {"type": "object"}},
+          "rechecked": {"type": "boolean"}
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,262 @@
+{
+  "version": 1,
+  "source_commit": "68dd15a",
+  "delivery": "Assets and rendered media are delivered privately; this public manifest contains metadata only.",
+  "files": [
+    {
+      "path": "assets/characters/protagonista-a/atlas-v1.png",
+      "git_blob_sha": "fa87d8fbbfbde9f206fd6701721adc52d7313d60",
+      "size_bytes": 1299637
+    },
+    {
+      "path": "assets/environments/beleza-01/00-vanity-v1.png",
+      "git_blob_sha": "81242433bb522f103ff8a76be54ada495ed8d866",
+      "size_bytes": 2929564
+    },
+    {
+      "path": "assets/environments/beleza-01/01-hydration-v1.png",
+      "git_blob_sha": "73ad537323cdba680c10f51ac318b4b4b0637e93",
+      "size_bytes": 3392003
+    },
+    {
+      "path": "assets/environments/beleza-01/02-nutrition-v1.png",
+      "git_blob_sha": "d48ad5af8d4712df951c714daaafd189ec3affed",
+      "size_bytes": 3110877
+    },
+    {
+      "path": "assets/environments/beleza-01/03-reconstruction-v1.png",
+      "git_blob_sha": "de37b24d8a5dc6d32accab931531c7c863c32a15",
+      "size_bytes": 2939380
+    },
+    {
+      "path": "assets/environments/beleza-01/04-selection-v1.png",
+      "git_blob_sha": "75522ded95b705f7a723dd9c9903f8947e70e201",
+      "size_bytes": 3287806
+    },
+    {
+      "path": "assets/environments/beleza-01/05-sunset-v1.png",
+      "git_blob_sha": "2fe86b0f946b769e23ab4ce2c843110dd6b6c459",
+      "size_bytes": 2954301
+    },
+    {
+      "path": "assets/environments/beleza-01/environment-atlas-v1.png",
+      "git_blob_sha": "f2f4eb6fbcd4186bd9a8478a40de26180e2ed9db",
+      "size_bytes": 3526152
+    },
+    {
+      "path": "assets/environments/beleza-01/foreground-atlas-v1.png",
+      "git_blob_sha": "5e8f58739c1e37e50394ea579cca17431195d022",
+      "size_bytes": 2258931
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/audio/effects.wav",
+      "git_blob_sha": "5b312cb271bc5ba9a95afc602ef42acb17c236d9",
+      "size_bytes": 6068204
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/audio/music.wav",
+      "git_blob_sha": "39b382146c0daf6198700a9e9082d724ffa1aac5",
+      "size_bytes": 6068204
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/audio/narration.mp3",
+      "git_blob_sha": "6ffc9ee91cb4350a59e4e2a011d5522c099f6aee",
+      "size_bytes": 405936
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/arm-left.png",
+      "git_blob_sha": "96824d37ca6ceb87a4ebb48bac4b105fe0198c92",
+      "size_bytes": 53874
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/arm-right.png",
+      "git_blob_sha": "c31433cf7403a1e844c5d84fc69c32aed01a5b32",
+      "size_bytes": 54679
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/forearm-left.png",
+      "git_blob_sha": "730d3d78dcc495701181e5008f708f2b362d7826",
+      "size_bytes": 52251
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/forearm-right.png",
+      "git_blob_sha": "7cebcd6882937de7632e5780355f9fbb2832dac9",
+      "size_bytes": 37027
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/hair-strand.png",
+      "git_blob_sha": "1842429353625d5711d383d464933867ec0b4ba4",
+      "size_bytes": 27964
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/head-curious.png",
+      "git_blob_sha": "a2d2a2c62ca4c99d00fedbc989a9ba8664346f09",
+      "size_bytes": 125097
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/head-happy.png",
+      "git_blob_sha": "f494a300652f8b35b290d45077519c10e724d380",
+      "size_bytes": 123746
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/head-neutral.png",
+      "git_blob_sha": "73c2a70b7d3099e90664d65ee6076701dea5ff21",
+      "size_bytes": 125243
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/head-surprised.png",
+      "git_blob_sha": "868575f3d1c5d9de05cd5fd350c5d69818b36162",
+      "size_bytes": 126272
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/reference.png",
+      "git_blob_sha": "ada909d4a407c34f80b9caade636221c99c93d7d",
+      "size_bytes": 63878
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/scarf-tail.png",
+      "git_blob_sha": "9a62f5ccab8913d58b8adb1545778e26e865ffaf",
+      "size_bytes": 34455
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/shin-left.png",
+      "git_blob_sha": "65637a61b079fc33af5139c3516efae658f0390c",
+      "size_bytes": 44940
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/shin-right.png",
+      "git_blob_sha": "9e69b5cf02a055384b8ceea7bb0e7a3e783d4515",
+      "size_bytes": 46507
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/thigh-left.png",
+      "git_blob_sha": "749d9b8ecc5c31dacde330b8cfaaad832745b2c0",
+      "size_bytes": 55146
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/thigh-right.png",
+      "git_blob_sha": "13016db3bd79d0e64e320ed0d497908d24679c76",
+      "size_bytes": 56061
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/torso.png",
+      "git_blob_sha": "865f71357114fd7aa52c156f8905cb21afad87b1",
+      "size_bytes": 114656
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/env-0.png",
+      "git_blob_sha": "81242433bb522f103ff8a76be54ada495ed8d866",
+      "size_bytes": 2929564
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/env-1.png",
+      "git_blob_sha": "73ad537323cdba680c10f51ac318b4b4b0637e93",
+      "size_bytes": 3392003
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/env-2.png",
+      "git_blob_sha": "d48ad5af8d4712df951c714daaafd189ec3affed",
+      "size_bytes": 3110877
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/env-3.png",
+      "git_blob_sha": "de37b24d8a5dc6d32accab931531c7c863c32a15",
+      "size_bytes": 2939380
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/env-4.png",
+      "git_blob_sha": "75522ded95b705f7a723dd9c9903f8947e70e201",
+      "size_bytes": 3287806
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/env-5.png",
+      "git_blob_sha": "2fe86b0f946b769e23ab4ce2c843110dd6b6c459",
+      "size_bytes": 2954301
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/fg-0.png",
+      "git_blob_sha": "1c5ec09cfd170dce04bc817bed4e252a7a51a3b6",
+      "size_bytes": 415284
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/fg-1.png",
+      "git_blob_sha": "c32a8d2a1254b1871462418ef7d512f2ce4a4b57",
+      "size_bytes": 339537
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/fg-2.png",
+      "git_blob_sha": "8158f5b0a42eaf1069ebd077422a35f1a43b94f5",
+      "size_bytes": 352662
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/fg-3.png",
+      "git_blob_sha": "d52c50c61f7f64807e1342c899a92318f75dffd5",
+      "size_bytes": 382522
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/fg-4.png",
+      "git_blob_sha": "9c542c6aa9e8ab4ec3101f8065a77d0a4516b50c",
+      "size_bytes": 356232
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/fg-5.png",
+      "git_blob_sha": "55f2d85a16bf7ab8ff0c35f500d300c45c4dbae6",
+      "size_bytes": 364932
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/review/frame-1.8.png",
+      "git_blob_sha": "1854bb0dcd0a46db2b0bba72d811d6f228355f37",
+      "size_bytes": 1399094
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/review/frame-13.4.png",
+      "git_blob_sha": "840a90a7fa0a596d8ce67fb4949599e0219a8625",
+      "size_bytes": 1520839
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/review/frame-19.5.png",
+      "git_blob_sha": "7657ed06eefe65cd097f41721c541e6fdcf608d7",
+      "size_bytes": 1539354
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/review/frame-24.5.png",
+      "git_blob_sha": "34429f6b44f2fd364e6757e86c0962fcac8230c4",
+      "size_bytes": 1462793
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/review/frame-30.png",
+      "git_blob_sha": "12be06c59a9a97db808d91543248c1ad56df7fd1",
+      "size_bytes": 1512489
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/review/frame-37.3.png",
+      "git_blob_sha": "33752456667c328894f4a57cf7cb4e61b1244b4b",
+      "size_bytes": 1346897
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/review/frame-44.8.png",
+      "git_blob_sha": "429d407145a549f7536816b720a68db12929f1b2",
+      "size_bytes": 1383317
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/review/frame-5.8.png",
+      "git_blob_sha": "6cfa816769b773d51e2c4ddaa887921fae0723fb",
+      "size_bytes": 1408570
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/review/frame-50.4.png",
+      "git_blob_sha": "53a51f39349f91755691ad864c8a3a4fc7c9c050",
+      "size_bytes": 1502731
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/review/frame-57.png",
+      "git_blob_sha": "6d3b3ff324cbab8b4d569e0c33093fc581b5b55e",
+      "size_bytes": 1419547
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/review/frame-65.8.png",
+      "git_blob_sha": "696b50e99f4f6774d42222d6a883866cbb4b963d",
+      "size_bytes": 1364961
+    }
+  ]
+}

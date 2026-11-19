@@ -1,34 +1,24 @@
-# Faceless Shorts: a free Claude skill
+# TikTokVideos — acervo de beleza e autocuidado
 
-Narrated faceless shorts (YouTube Shorts, TikTok, Reels) made 100% in code on your own computer: script, AI voice,
-word-synced captions, animation, sound effects and music, rendered to MP4. No AI video, no API keys, no credits.
+## Produção atual
 
-**Styles** (each has a style sheet, a style guide and a finished example video project)
-1. **Deep Dive 3D** (flagship): Zack D. Films-like 3D "What happens if…?" explainers. Example: *What happens if you hold your breath?*
-2. **Night File 3D**: unsolved mysteries and true crime in dark 3D rooms. Example: *The man who jumped out of a plane* (D.B. Cooper).
-3. **Inside Out**: flat 2D x-ray explainers. Example: *What if you swallow gum?*
-4. **Stick Story**: stick-figure survival steps. Example: *What if the power went out for 3 days?*
-5. **Paper Atlas**: history in cut paper and maps. Example: *How one bakery burned down London*.
-6. **Tall Tale 3D**: funny true stories, flat 2D cartoon people in a sunny 3D world. Example: *The girl who was mailed to grandma*.
+[**Episódio 01 · Hidratação, nutrição e reconstrução — Tall Tale**](projects/beleza-01-tall-tale/README.md)
 
-**How it works**
-script.json → Kokoro voice (local, free) → Whisper word timings (local, free) → shots drawn in code, each cut and caption
-placed on its word → procedural sound + music → headless Chrome captures every frame → ffmpeg renders the MP4.
-Claude checks a contact sheet of the whole video before you ever see it.
-Optional: when you ask, Claude uploads the finished short to your YouTube channel through Zapier (it confirms title, visibility and category first).
+A protagonista A foi aprovada por Iza em 19/11/2026: adulta curiosa e divertida, cabelo castanho ondulado em coque com mechas, blusa lilás, lenço e presilha amarelos. A direção atual usa arte gerada original, personagem em peças com rig e ambientes vivos em camadas 2.5D. A referência de clareza e acabamento não implica copiar assets ou equivalência certificada a estúdio.
 
-**Needs:** Claude Code (or Claude with a linked computer), Node.js 22+, ffmpeg, Google Chrome, Python 3.10+, ~1 GB for the
-voice and Whisper models. Claude installs what's missing.
+## Navegação
 
-**Windows:** run the scripts in Git Bash (installed with Git for Windows; Claude Code uses it already).
+- [Personagem reutilizável](assets/characters/protagonista-a/)
+- [Cenários do episódio](assets/environments/beleza-01/)
+- [Projetos separados por vídeo](projects/)
+- [Skills de organização, hooks e aperfeiçoamento](skills/README.md)
+- [Decisões criativas e memória](IA_MEMORY.md)
 
-**Install:** put this folder at `~/.claude/skills/faceless-shorts/`, then run `bash scripts/setup.sh` (prints "All set")
-and `bash scripts/selftest.sh` (prints "SELFTEST PASSED"). Start a new session and ask:
-"Make a Deep Dive 3D short: what happens if you crack your knuckles?"
+Cada projeto guarda roteiro, áudio, tempos por palavra, código Remotion, assets usados, revisão e renders. Fontes brutas e versões derivadas permanecem identificadas. Dependências são reproduzidas pelo package-lock, sem node_modules no acervo.
 
-**Layout:** `SKILL.md` (what Claude follows) · `scripts/` (setup, selftest, new_video, voice, words, estimate) ·
-`styles/<style>/` (`style-sheet.png`, `STYLE.md`, `example/` = a complete project that renders as-is).
+As instruções originais Faceless estão preservadas em SKILL.md e STYLE.md. Quando conflitam com a orientação atual de Iza (geração de imagens, equipe e autonomia), prevalece a orientação atual.
 
-**Licenses:** the code, stories, drawings and sound are original and free to use in your videos. Inter font: SIL Open Font
-License 1.1. Installed on first use: Kokoro-82M (Apache-2.0) via kokoro-onnx (MIT), faster-whisper + Whisper small.en (MIT),
-numpy, scipy.
+
+## Assets e mídia desta versão
+
+Os novos PNGs, áudio e vídeo são entregues privadamente junto do projeto completo. Esta branch pública guarda o código legível e o [manifesto de integridade](asset-manifest.json), sem incorporar os novos arquivos binários. Para renderizar, restaure os arquivos da entrega privada nas posições indicadas pelo manifesto antes de executar os comandos de produção. A publicação pública dos binários foi interrompida pela revisão automática; nenhum workflow de materialização é incluído.

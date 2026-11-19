@@ -1,0 +1,7 @@
+{
+ "version":"v3",
+ "reviewers":["independent director","professional animator","root producer"],
+ "fixed":["detached sleeve/forearm","head-neck gap","disconnected knees","incorrect foot planes","duplicate headings","generic pseudo molecule","unreadable long helper labels","static nutrition fibers","duplicate protein particles","static category overlap","narrow CTA badge"],
+ "pending":["independent review of rendered motion and full audio perception"],
+ "score_policy":"Editorial scores are subjective and require evidence. Never infer a final score from static art alone."
+}

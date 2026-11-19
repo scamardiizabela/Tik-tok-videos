@@ -1,11 +1,10 @@
-# Instruções para criação de vídeos
-Este repositório contém a série TikTok de beleza e autocuidado de Iza.
+# Série de beleza e autocuidado de Iza
 
-Antes de planejar, criar ou modificar qualquer vídeo:
-1. Leia integralmente [IA_MEMORY.md](IA_MEMORY.md).
-2. Abra e examine [o painel visual](references/motion-contact-sheet.jpg).
-3. Preserve a estética de personagens 2D simples em cenários ilustrados com profundidade e a linguagem de animação aprovada.
-4. Consulte correções recentes da usuária. Não peça novamente direções já registradas.
-5. Atualize a memória apenas com decisões realmente aprovadas e identifique propostas ainda em aberto.
-
-Use Remotion para produção, salvo nova orientação explícita da usuária. Os temas e cenas devem ser originais; a referência é de arte e movimento. Não aplicar identidades de outros projetos.
+1. Ler IA_MEMORY.md, começando pela atualização mais recente. A direção atual da conversa prevalece sobre os registros históricos e restrições antigas da Faceless.
+2. Usar protagonista A aprovada, assets originais gerados, rig em peças, cenários vivos 2.5D por conceito e Remotion.
+3. Guardar assets reutilizáveis em assets/, cada episódio em projects/<id>/ e habilidades em skills/.
+4. Aplicar skills/organizer, skills/social-media-hooks e skills/project-improvement. Preservar procedência e licenças.
+5. Usar diretor crítico independente para revisar cenas renderizadas. Meta editorial >=8,5 por cena, sem inventar notas ou escuta. Registrar limites não verificados.
+6. Manter hook e CTA humanizados, legendas por palavra alinhadas à voz e ações que expliquem a narração. Pesquisar fontes primárias para alegações técnicas.
+7. Trabalhar autonomamente dentro do escopo autorizado. Publicar o acervo neste repositório está autorizado. Publicação em redes sociais exige pedido próprio.
+8. Atualizar memória só com aprovações reais. Nunca tratar silêncio como aprovação.
