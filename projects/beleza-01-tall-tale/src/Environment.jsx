@@ -4,7 +4,7 @@ const colors=[['#ddc8b6','#f9e5bd'],['#d1e8df','#f4e5c4'],['#b6e1e5','#e9f2dc'],
 const environments=[0,0,1,1,2,2,3,3,4,4,5];
 function Leaf({x,y,angle=0,s=1,color='#557e70'}){return <g transform={`translate(${x} ${y}) rotate(${angle}) scale(${s})`}><path d="M0 0C-75 -45 -53 -144 0 -173C55 -111 72 -43 0 0Z" fill={color}/><path d="M0 0V-150" stroke="#305b50" strokeWidth="5" fill="none"/></g>}
 export function Environment({scene=0,t=0}){
- const n=typeof scene==='number'?scene:0;const palette=colors[n]||colors[0];const pan=Math.sin(t*.11)*12;const fg=Math.sin(t*.16)*6;
+ const n=typeof scene==='number'?scene:0;const palette=colors[n]||colors[0];const pan=-8+t*2.2;const fg=12-t*3.5;
  return <div style={{position:'absolute',inset:0,overflow:'hidden',background:`linear-gradient(160deg,${palette[0]},${palette[1]})`,perspective:1600}}>
  <img src={staticFile(`env-${environments[n]??0}.png`)} style={{position:'absolute',width:'110%',height:'110%',left:'-5%',top:'-5%',objectFit:'cover',transform:`translate(${pan}px,${Math.sin(t*.13)*7}px) scale(${1.02+t*.0007})`,opacity:.94}}/>
  <div style={{position:'absolute',inset:0,background:'linear-gradient(180deg,rgba(255,249,232,.1),rgba(255,249,232,.02) 65%,rgba(39,63,75,.22))'}}/>

@@ -1,0 +1,23 @@
+{
+  "duration": 77.2,
+  "cuts": [
+    0,
+    3.2,
+    14,
+    21.76,
+    25.28,
+    33.44,
+    39.76,
+    50.4,
+    54.96,
+    63.12,
+    70.64,
+    77.2
+  ],
+  "alignment": "ElevenLabs Scribe v1, first take f57PU7YOFFdNKErnXuXA",
+  "voice": {
+    "id": "nczLZ6GvJGozyc3FlLte",
+    "name": "Juliana",
+    "model": "eleven_v4"
+  }
+}

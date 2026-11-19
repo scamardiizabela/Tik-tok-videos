@@ -1,0 +1,292 @@
+{
+  "version": "2026-11-19-revision-2",
+  "files": [
+    {
+      "path": "assets/characters/protagonista-a/atlas-v1.png",
+      "bytes": 1299637,
+      "sha256": "1aef996ff49761bc964640eb79e1985e4fa4f242ce9ff087ab9b3c4369b1103f",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "assets/environments/beleza-01/00-vanity-v1.png",
+      "bytes": 2929564,
+      "sha256": "abb256b6f3e6ee7e4d2b50c60f743fe26f9b03177af955cae524bf9f4ba7ab97",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "assets/environments/beleza-01/01-hydration-v1.png",
+      "bytes": 3392003,
+      "sha256": "cbaf5ee825841c2ea902e831c0c237fdb31abce6bbabdc1ecc3d652311f724a4",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "assets/environments/beleza-01/02-nutrition-v1.png",
+      "bytes": 3110877,
+      "sha256": "398b0a862f46f21524ecff58533c43e601c7121d9bee95a03ff2b17ed82f56b4",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "assets/environments/beleza-01/03-reconstruction-v1.png",
+      "bytes": 2939380,
+      "sha256": "4ac4cf14c6d581a67cb7e312d4ba13236b6ed8a666b98ca1c09081c058448f41",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "assets/environments/beleza-01/04-selection-v1.png",
+      "bytes": 3287806,
+      "sha256": "c5dbe4e8e853b085230274a36d4b9c582022c5ccc8b5c01390900218eee342a2",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "assets/environments/beleza-01/05-sunset-v1.png",
+      "bytes": 2954301,
+      "sha256": "6439b650c49f3620df6367652055a6fb5194b407226b535fd24cfb57d818905f",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "assets/environments/beleza-01/environment-atlas-v1.png",
+      "bytes": 3526152,
+      "sha256": "4ada777d6797af21f645ffe176074f8c29f0cf61a552604c7f8cca21992685a8",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "assets/environments/beleza-01/foreground-atlas-v1.png",
+      "bytes": 2258931,
+      "sha256": "f1da45bc44bb056826a8b551f3f8aa3e50857f09cb4baa3a16ee6d069e1e40ae",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/audio/effects.wav",
+      "bytes": 6809084,
+      "sha256": "2ec07219838c06e53c9a43ec85481a9ac70d8602f42bffc3370913edd5ad5c7a",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/audio/music.wav",
+      "bytes": 6809084,
+      "sha256": "a6d4784b5ae72fcb12e5788147eaabd098292ac49364adcfe54461bb65321ab9",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/audio/narration-v2.mp3",
+      "bytes": 1243043,
+      "sha256": "82ec9451dec41fd7d680b5b3572c1d592611bd6199136cc34e2014d7ca8ffe72",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/audio/narration.mp3",
+      "bytes": 405936,
+      "sha256": "a4c1b59b04c7647ea0994720c26ca72680421b2c5724295ce54ce96aa98451ce",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/arm-left.png",
+      "bytes": 53874,
+      "sha256": "2498a4c8c1a84021f812b08a03ed0beda6a705e70a9db7b831c1f3981c55e417",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/arm-right.png",
+      "bytes": 54679,
+      "sha256": "fd40b1cafda341b9621cd112b8e5df6d8ef168708f6e059e5dd0d0eb4d9e86cd",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/forearm-left.png",
+      "bytes": 52251,
+      "sha256": "0a21653ca800127bb05b4492bea8cdd82af28b1a10ed2fc7f1d8a9e2210cab13",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/forearm-right.png",
+      "bytes": 37027,
+      "sha256": "9027d35c7dc96f082745dcd075528ad201108ea7a0b1ad4522a876f04a63ac76",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/hair-strand.png",
+      "bytes": 27963,
+      "sha256": "72043ce0ece428dbee82ece3fd1935841dee6b247ddf46568a2920ee9563e3e5",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/head-curious.png",
+      "bytes": 125161,
+      "sha256": "8d30850fd8a9d49da7961b00a2431053aaa5edcc8261ab9fb54067ca35aeeb81",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/head-happy.png",
+      "bytes": 123774,
+      "sha256": "c730e82081fdb6ea0c5702b68b91dd5eadef04726588fd9dcb327418baf3d85b",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/head-neutral.png",
+      "bytes": 125287,
+      "sha256": "409babd97750ddfa95a50d1bcf7b09a569ca1ff3ce65695a770fa638c4e56ad1",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/head-surprised.png",
+      "bytes": 126318,
+      "sha256": "5364e9f2c47a470d3434c1b9fe7474ce4797a2aebfc7707fb8e84cdee13e8e69",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/reference.png",
+      "bytes": 63876,
+      "sha256": "c99bfb5aae2ce37c07a41ed103b049431c4843340d339f64f4580fbb6402613e",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/scarf-tail.png",
+      "bytes": 34455,
+      "sha256": "88c4545d5712574eefcfd643ff4060101c735858bf4e149844e958ae6e90c1b5",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/shin-left.png",
+      "bytes": 44940,
+      "sha256": "36f81caf46a67d1637b584505b7e6aceb61b8903da8f978a654d33d4efa89f32",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/shin-right.png",
+      "bytes": 46507,
+      "sha256": "8c8dbb46d975dd2f68ac7cc410620e61c450bb6574a0953cfff13a71036fff03",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/thigh-left.png",
+      "bytes": 55146,
+      "sha256": "9546ba8a35507d167dadb1439327c6acdbe677f417178a1a1307ba51d7f0687f",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/thigh-right.png",
+      "bytes": 56061,
+      "sha256": "589b78ed7840ba1e0ad7439acd1d12e000effe45dc003625a86100234031eb76",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/character/torso.png",
+      "bytes": 114656,
+      "sha256": "49471871e708850d52830308aa7073f6c7fbae2fb81bb9046b1cde5a909efd67",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/env-0.png",
+      "bytes": 2929564,
+      "sha256": "abb256b6f3e6ee7e4d2b50c60f743fe26f9b03177af955cae524bf9f4ba7ab97",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/env-1.png",
+      "bytes": 3392003,
+      "sha256": "cbaf5ee825841c2ea902e831c0c237fdb31abce6bbabdc1ecc3d652311f724a4",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/env-2.png",
+      "bytes": 3110877,
+      "sha256": "398b0a862f46f21524ecff58533c43e601c7121d9bee95a03ff2b17ed82f56b4",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/env-3.png",
+      "bytes": 2939380,
+      "sha256": "4ac4cf14c6d581a67cb7e312d4ba13236b6ed8a666b98ca1c09081c058448f41",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/env-4.png",
+      "bytes": 3287806,
+      "sha256": "c5dbe4e8e853b085230274a36d4b9c582022c5ccc8b5c01390900218eee342a2",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/env-5.png",
+      "bytes": 2954301,
+      "sha256": "6439b650c49f3620df6367652055a6fb5194b407226b535fd24cfb57d818905f",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/fg-0.png",
+      "bytes": 415284,
+      "sha256": "83524154621d6ac554b8206be13251104beb536520e798281388a13ba75c8c72",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/fg-1.png",
+      "bytes": 339537,
+      "sha256": "54553ce8ff01c06697568cb17c15b60898fdc72cfcbd0c6214560c0c9221d56a",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/fg-2.png",
+      "bytes": 352662,
+      "sha256": "9801f7144f52323a824c6d836d0ba99a41159627cebe2b0c972b6469e5ba210b",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/fg-3.png",
+      "bytes": 382522,
+      "sha256": "42430c945bd960742093426b18548f5d3a0645f494a0f7d1f34540531fe1f3d5",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/fg-4.png",
+      "bytes": 356232,
+      "sha256": "7a21f9620b2e6641f5c98ad196c9af99727df3806aa891c4ed977778d6ebccfe",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/public/fg-5.png",
+      "bytes": 364932,
+      "sha256": "7967d9ce770b1ea431c9c813b19adc2cbb5ec0a58a24a3fdf0002a3fe4956067",
+      "publication": "private deliverable",
+      "approval": "original art approved; revised animation and voice pending user review"
+    }
+  ]
+}

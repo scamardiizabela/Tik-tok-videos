@@ -1,3 +1,19 @@
+# Prévia revisada v2 — 19/11/2026
+
+Nova atuação, enquadramentos médios e locução sintética brasileira Juliana. Arte e cenários originais mantidos. Vídeo vertical1080×1920,30fps,77,2s. Ainda depende da avaliação da usuária.
+
+Para esta revisão, após recuperar os binários privados e executar npm ci:
+
+```bash
+python3 prepare-assets.py
+python3 make-audio.py
+node render-v2.cjs --stills=1.8,8,16,23,29,36,44,52,58,66,74
+node render-v2.cjs
+```
+
+A extração usa Pillow, numpy e scipy. O arquivo words-v2.json contém os tempos reais da nova voz; timeline-v2.json define cortes e duração. A voz está em public/audio/narration-v2.mp3. Render em renders/beleza-01-v2.mp4. Leia review/changelog.md para mudanças e limites. A revisão anterior segue registrada abaixo como histórico.
+
+---
 # Episódio 01 — Hidratação, nutrição e reconstrução
 
 Nova produção com protagonista A, sem reutilizar a personagem Lia. Roteiro e voz anteriores preservados; arte, rig e encenação novos.

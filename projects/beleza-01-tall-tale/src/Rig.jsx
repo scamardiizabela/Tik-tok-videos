@@ -1,49 +1,108 @@
 import React from 'react';
 import {Img,staticFile} from 'remotion';
-// Socket-based rig. Sprite coordinates are measured on source PNGs; every limb
-// is drawn around its anatomical socket instead of a padded atlas cell centre.
-const Sprite=({name,ax,ay,k=1,style={}})=><Img src={staticFile(`character/${name}.png`)} style={{position:'absolute',left:-ax*k,top:-ay*k,width:(name.startsWith('head')?({neutral:283,curious:313,surprised:311,happy:293}[name.slice(5)]||313):({torso:314,'arm-left':313,'arm-right':300,'forearm-left':306,'forearm-right':295,'thigh-left':313,'thigh-right':296,'shin-left':312,'shin-right':267}[name]||313))*k,height:(name.startsWith('head')?(name==='head-surprised'?308:304):({'forearm-right':284,'shin-right':301}[name]||313))*k,...style}}/>;
-const Socket=({x,y,angle=0,children,z=0})=><div style={{position:'absolute',left:x,top:y,width:0,height:0,transform:`rotate(${angle}deg)`,transformOrigin:'0 0',zIndex:z}}>{children}</div>;
-function Arm({side,t,gesture}){
- const left=side==='left',point=['point','hold'].includes(gesture)&&!left,welcome=gesture==='welcome',hold=gesture==='hold'&&left;
- // Forearms overlap the sleeve cuff by 12–18 px. There is no independent drift.
- const shoulder=left?(hold?-13:welcome?20:2+Math.sin(t*1.2)*2):(point?-57+Math.sin(t*.85)*3:welcome?-35:-3+Math.sin(t*1.2+.3)*2);
- const forearm=left?(hold?260:welcome?145:180+Math.sin(t*.9)*2):(point?58+Math.sin(t*.9)*3:welcome?48:103+Math.sin(t*.9)*2);
- const k=.53;
- return <Socket x={left?201:318} y={238} angle={shoulder} z={left?(hold?8:2):7}>
-  <Sprite name={`arm-${side}`} ax={left?155:149} ay={44} k={k}/>
-  <Socket x={left?-25:30} y={96} angle={forearm}>
-   <Sprite name={`forearm-${side}`} ax={left?100:44} ay={left?266:190} k={left?.40:.43}/>
-   {hold&&<Socket x={26} y={-68} angle={-forearm-shoulder}><svg width="72" height="78" viewBox="0 0 72 78" style={{position:'absolute',left:-27,top:-74,overflow:'visible'}}><path d="M7 22H65L61 66Q36 76 11 66Z" fill="#ad9bd3" stroke="#49354c" strokeWidth="3"/><ellipse cx="36" cy="22" rx="29" ry="8" fill="#cbbbe7" stroke="#49354c" strokeWidth="3"/><rect x="7" y="11" width="58" height="13" rx="5" fill="#fff4da" stroke="#49354c" strokeWidth="3"/><rect x="22" y="37" width="29" height="20" rx="6" fill="#fff4da"/><path d="M30 43H43M30 49H40" stroke="#7a628f" strokeWidth="2"/></svg></Socket>}
+
+// Screen-side names are deliberate: screen-right is the presenter's anatomical
+// LEFT arm. The pointing hand belongs on that side, facing the products.
+const sizes={torso:[314,313],'arm-left':[313,313],'arm-right':[300,313],
+ 'forearm-left':[306,313],'forearm-right':[295,284],
+ 'thigh-left':[313,313],'thigh-right':[296,313],'shin-left':[312,313],
+ 'shin-right':[267,301],'head-neutral':[283,304],'head-curious':[313,304],
+ 'head-surprised':[311,308],'head-happy':[293,304]};
+const Sprite=({name,ax,ay,k=1,mirror=false,opacity=1})=>{
+ const [w,h]=sizes[name];
+ return <div style={{position:'absolute',width:0,height:0,opacity,transform:mirror?'scaleX(-1)':undefined}}>
+  <Img src={staticFile(`character/${name}.png`)} style={{position:'absolute',left:-ax*k,top:-ay*k,width:w*k,height:h*k}}/>
+ </div>;
+};
+const Socket=({x=0,y=0,angle=0,children,z=0})=><div style={{position:'absolute',left:x,top:y,width:0,height:0,transform:`rotate(${angle}deg)`,transformOrigin:'0 0',zIndex:z}}>{children}</div>;
+const clamp=v=>Math.max(0,Math.min(1,v));
+const ease=v=>{v=clamp(v);return v*v*(3-2*v)};
+const rest={sr:-6,rw:85,sl:3,lw:113,body:0,head:0};
+const present={sr:-10,rw:-49,sl:0,lw:100,body:1.6,head:3};
+const low={...present,sr:-8,rw:-40,head:5};
+const high={...present,sr:-18,rw:-65,head:-3};
+const explain={sr:-11,rw:-61,sl:-5,lw:-55,body:-1.2,head:-2};
+const caution={sr:-12,rw:35,sl:-5,lw:-61,body:-2,head:-4};
+const open={sr:-13,rw:-66,sl:-3,lw:-56,body:0,head:1};
+const pose=(base,changes={})=>({...base,...changes});
+// Explicit action phrases: settle -> anticipation -> extension -> hold -> release.
+// Each scene has its own blocking; there is no repeating arm oscillator.
+const tracks=[
+ [[0,pose(rest,{head:-5})],[.11,pose(caution,{head:-7})],[.32,explain],[.56,pose(explain,{sr:-11,rw:-48,head:3})],[.82,caution],[1,rest]],
+ [[0,rest],[.1,pose(rest,{sr:2,rw:96,head:-3})],[.22,high],[.39,present],[.55,low],[.68,present],[.86,pose(rest,{head:3})],[1,rest]],
+ [[0,rest],[.07,pose(rest,{sr:1,rw:95})],[.19,present],[.39,low],[.56,pose(low,{sr:-12,rw:-45,head:2})],[.72,pose(rest,{sl:-5,lw:-55,head:-2})],[.9,present],[1,pose(present,{head:0})]],
+ [[0,rest],[.14,pose(rest,{head:-4})],[.34,explain],[.66,pose(explain,{sr:-9,rw:-45,head:4})],[.88,pose(caution,{head:1})],[1,rest]],
+ [[0,rest],[.08,pose(rest,{head:-3})],[.22,explain],[.44,pose(explain,{sr:-10,rw:-44,sl:3,lw:104,head:4})],[.65,pose(explain,{sr:-8,rw:-49,body:2,head:0})],[.84,caution],[1,rest]],
+ [[0,rest],[.14,pose(rest,{head:4})],[.32,caution],[.6,pose(caution,{head:4,body:1})],[.84,explain],[1,rest]],
+ [[0,rest],[.08,pose(rest,{sr:1,rw:95})],[.2,high],[.4,low],[.58,pose(low,{sr:-11,rw:-47,head:4})],[.74,pose(rest,{sl:-5,lw:-55})],[.89,present],[1,rest]],
+ [[0,rest],[.18,caution],[.42,pose(caution,{head:4,body:1})],[.64,explain],[.83,pose(caution,{head:-3})],[1,rest]],
+ [[0,rest],[.12,pose(rest,{sl:-1,head:-4})],[.28,open],[.53,pose(explain,{sr:-12,rw:-76,sl:3,lw:-43,head:3})],[.76,pose(open,{head:-2})],[1,rest]],
+ [[0,rest],[.12,pose(rest,{sr:2,rw:95})],[.25,high],[.43,present],[.61,low],[.78,pose(rest,{sl:-5,lw:-55,head:2})],[1,rest]],
+ [[0,rest],[.17,open],[.4,pose(open,{sl:-5,lw:-70,head:-3})],[.61,pose(open,{sl:-3,lw:-55,head:3})],[.83,pose(explain,{head:0})],[1,pose(rest,{head:2})]],
+];
+const durations=[3.65,5.73,9.12,2.85,7.25,5,9.9,4.2,7.1,7.1,6.9];
+function sample(track,u){
+ for(let i=1;i<track.length;i++){
+  if(u<=track[i][0]){
+   const [a,A]=track[i-1],[b,B]=track[i],q=ease((u-a)/(b-a));
+   return Object.fromEntries(Object.keys(rest).map(k=>[k,A[k]+(B[k]-A[k])*q]));
+  }
+ }
+ return track[track.length-1][1];
+}
+function Arm({side,shoulder,worldDirection,point=false}){
+ const left=side==='left';
+ // Source measurements: shoulder to cuff. Attach 5 px inside the painted cuff
+ // so the dark outline remains continuous during all elbow rotations.
+ const elbow={x:left?-26.5:28,y:101};
+ const palm=!left&&!point;
+ const nativeDirection=left?-66:palm?-114:-25;
+ const elbowRotation=worldDirection-shoulder-nativeDirection;
+ return <Socket x={left?201:318} y={238} angle={shoulder} z={left?7:8}>
+  <Sprite name={`arm-${side}`} ax={left?155:149} ay={44} k={.53}/>
+  <Socket x={elbow.x} y={elbow.y} angle={elbowRotation}>
+   <Sprite name={left||palm?'forearm-left':'forearm-right'} ax={left||palm?100:44} ay={left||palm?266:190} k={left||palm?.40:.43} mirror={palm}/>
   </Socket>
  </Socket>;
 }
 function Leg({side,t,walk}){
  const left=side==='left',phase=t*6+(left?0:Math.PI);
- // Idle feet remain planted. Walking is only enabled by a translating actor.
  const swing=walk?Math.sin(phase)*13:0;
  return <Socket x={left?232:292} y={398} angle={swing} z={left?1:2}>
-  <Sprite name={`thigh-${side}`} ax={left?160:152} ay={20} k={.50}/>
-  <Socket x={left?1:-1} y={124} angle={walk?Math.max(0,Math.cos(phase))*20:0}>
+  <Socket x={left?1:-1} y={101} angle={walk?Math.max(0,Math.cos(phase))*20:0}>
    <Sprite name={`shin-${side}`} ax={left?154:111} ay={22} k={.54}/>
   </Socket>
+  <Sprite name={`thigh-${side}`} ax={left?160:152} ay={20} k={.50}/>
  </Socket>;
 }
-export function Rig({t=0,mood='curious',gesture='point',scale=1,x=0,y=0,walk=false}){
- const face=['neutral','curious','surprised','happy'].includes(mood)?mood:'curious';
- // Local contact plane = y670. Head/torso breathe above a fixed pelvis/feet.
- const breathe=Math.sin(t*1.7)*1.1;
- const headX={neutral:133,curious:161,surprised:160,happy:161}[face];
+export function Rig({t=0,scene=0,duration,mood='curious',gesture='point',scale=1,x=0,y=0,walk=false,speaking=0}){
+ const s=Math.max(0,Math.min(10,scene)),d=duration||durations[s];
+ const u=clamp(t/d),p=sample(tracks[s],u);
+ // In a close-up the eyes alternate between audience and object at deliberate
+ // phrase boundaries. Expression changes land on the head turn, not every frame.
+ const faceKeys=s===10?[[0,'neutral'],[.18,'happy']]:s===0?[[0,'surprised'],[.3,'curious'],[.7,'neutral']]:[[0,'neutral'],[.24,'curious'],[.66,'neutral']];
+ let faceIndex=0;
+ for(let i=1;i<faceKeys.length;i++)if(u>=faceKeys[i][0])faceIndex=i;
+ const face=faceKeys[faceIndex][1],previousFace=faceKeys[Math.max(0,faceIndex-1)][1];
+ const faceMix=faceIndex===0?1:ease((t-faceKeys[faceIndex][0]*d)/.16);
+ const breathe=Math.sin(t*1.7)*.65;
+ const emphasis=Math.max(0,Math.min(1,speaking))*1.2;
+ const headAnchors={neutral:133,curious:161,surprised:160,happy:161};
+ const pointing=[1,2,6,9].includes(s);
  return <div style={{position:'absolute',left:x,top:y,width:520,height:700,transform:`scale(${scale})`,transformOrigin:'0 0',zIndex:8}}>
-  <div style={{position:'absolute',left:201,top:663,width:126,height:15,borderRadius:'50%',background:'#332c493b',filter:'blur(5px)'}}/>
+  <div style={{position:'absolute',left:201,top:640,width:126,height:15,borderRadius:'50%',background:'#332c493b',filter:'blur(5px)'}}/>
   <Leg side="left" t={t} walk={walk}/><Leg side="right" t={t} walk={walk}/>
-  <div style={{position:'absolute',inset:0,transform:`translateY(${breathe}px)`}}>
-   <Arm side="left" t={t} gesture={gesture}/>
-   <Socket x={260} y={211} z={5}><Sprite name="torso" ax={162} ay={16} k={.68}/></Socket>
-   {/* A short neck fills the chin-to-collar socket, behind both source pieces. */}
-   <div style={{position:'absolute',left:247,top:192,width:29,height:42,borderRadius:'10px 10px 14px 14px',background:'#c98e65',border:'2px solid #613b2e',zIndex:4}}/>
-   <Arm side="right" t={t} gesture={gesture}/>
-   <Socket x={260} y={208} angle={Math.sin(t*1.1)*1.3} z={9}><Sprite name={`head-${face}`} ax={headX} ay={291} k={.64}/></Socket>
-  </div>
+  <Socket x={260} y={398} angle={p.body} z={5}>
+   <div style={{position:'absolute',left:-260,top:-398+breathe-emphasis}}>
+    <Socket x={260} y={211} z={5}><Sprite name="torso" ax={162} ay={16} k={.68}/></Socket>
+    <div style={{position:'absolute',left:247,top:205,width:29,height:29,borderRadius:'10px 10px 14px 14px',background:'#c98e65',border:'2px solid #613b2e',zIndex:4}}/>
+    <Arm side="left" shoulder={p.sl} worldDirection={p.lw}/>
+    <Arm side="right" shoulder={p.sr} worldDirection={p.rw} point={pointing}/>
+    <Socket x={260} y={223} angle={p.head-emphasis*.7} z={9}>
+     {faceMix<1&&<Sprite name={`head-${previousFace}`} ax={headAnchors[previousFace]} ay={291} k={.64} opacity={1-faceMix}/>}
+     <Sprite name={`head-${face}`} ax={headAnchors[face]} ay={291} k={.64} opacity={faceMix}/>
+    </Socket>
+   </div>
+  </Socket>
  </div>;
 }

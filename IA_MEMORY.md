@@ -1,3 +1,9 @@
+# Feedback e retomada — 19/11/2026 (revisão posterior)
+
+Iza reprovou a rigidez dos movimentos da protagonista, o braço apontador, a voz e a escala/enquadramento da primeira prévia. Gostou dos cenários e da apresentação dos produtos, mas pediu mais dinamismo. A aprovação da arte original não se estende à animação.
+
+Revisão em produção: planos médios, gestos por cena, sockets corrigidos, nova voz brasileira Juliana gerada em ElevenLabs e novos tempos por palavra. Nenhum desses ajustes foi aprovado pela usuária ainda. A nova versão será entregue como prévia revisada, sem inventar nota audiovisual integral.
+
 # Atualização de direção — 19/11/2026
 
 Esta seção prevalece sobre registros antigos abaixo. Iza aprovou a protagonista A: adulta, curiosa e divertida, cabelo castanho ondulado em coque com mechas soltas, presilha amarela, blusa lilás e lenço amarelo. Em seguida aprovou a arte e pediu os cenários.

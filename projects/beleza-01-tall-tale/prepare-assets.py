@@ -2,6 +2,7 @@ from PIL import Image
 from pathlib import Path
 import json
 import numpy as np
+from scipy.ndimage import label
 root=Path(__file__).resolve().parents[2]
 pub=Path(__file__).resolve().parent/'public'
 (pub/'character').mkdir(parents=True,exist_ok=True)
@@ -14,7 +15,15 @@ for i,name in enumerate(names):
  crop=im.crop((round(x*im.width/4),round(y*im.height/4),round((x+1)*im.width/4),round((y+1)*im.height/4)))
  bbox=crop.getchannel('A').getbbox()
  if bbox: crop=crop.crop(bbox)
- a=np.array(crop);r,g,b,alpha=[a[:,:,q] for q in range(4)];bad=((r>170)&(g<90)&((b<130)|(b>150)))|(alpha<40);a[bad,3]=0;crop=Image.fromarray(a)
+ a=np.array(crop);r,g,b,alpha=[a[:,:,q] for q in range(4)]
+ # Key only fringe connected to the transparent exterior. Interior lip pigments
+ # are part of the artwork and must retain their original alpha.
+ removable=((r>170)&(g<90)&((b<130)|(b>150)))|(alpha<40)
+ components,_=label(removable)
+ exterior=np.unique(np.concatenate([components[0],components[-1],components[:,0],components[:,-1]]))
+ exterior=exterior[exterior!=0]
+ a[np.isin(components,exterior),3]=0
+ crop=Image.fromarray(a)
  crop.save(pub/'character'/f'{name}.png')
  manifest[name]={'cell':[x,y],'size':crop.size,'source':'atlas-v1.png'}
 (pub/'character'/'parts.json').write_text(json.dumps(manifest,indent=2))

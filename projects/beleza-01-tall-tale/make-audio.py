@@ -1,6 +1,6 @@
 import numpy as np, wave
 from pathlib import Path
-p=Path(__file__).resolve().parent/'public/audio';sr=44100;duration=68.8
+p=Path(__file__).resolve().parent/'public/audio';sr=44100;duration=77.2
 x=np.arange(int(sr*duration))/sr
 music=np.zeros_like(x);fx=np.zeros_like(x)
 # Original restrained marimba-like chord bed, no third-party audio.
@@ -10,7 +10,7 @@ for beat in np.arange(0,duration,.6):
  f=chord[int(beat/.6)%3]* (2 if int(beat/.6)%4==0 else 1)
  env=(1-np.exp(-t*120))*np.exp(-t*7)
  music[k:k+n]+=.12*env*(np.sin(2*np.pi*f*t)+.25*np.sin(2*np.pi*f*2*t))
-for j,sec in enumerate([3.65,9.38,12.3,18.5,21.35,24.2,28.6,33.6,38,43.5,47.7,50,54.8,61.9,65.38]):
+for j,sec in enumerate([3.2,14,15.8,21.76,25.28,29.24,33.44,39.76,43.6,50.4,54.96,58.08,63.12,70.64,74.56]):
  k=int(sec*sr);n=int(.35*sr);t=np.arange(n)/sr
  env=(1-np.exp(-t*120))*np.exp(-t*17)
  sound=.12*env*np.sin(2*np.pi*(650+100*j%400)*t+2*np.sin(t*12))
