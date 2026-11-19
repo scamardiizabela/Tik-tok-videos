@@ -4,3 +4,5 @@
 **/.cache/
 **/review/frames/
 **/tmp/
+
+**/renders/master-local.mp4

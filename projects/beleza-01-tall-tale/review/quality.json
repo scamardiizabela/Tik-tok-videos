@@ -1,16 +1,18 @@
 {
-  "render_sha256": "",
+  "render_sha256": "82e1c1dd916e081f76e10770754d7fa20000f27d21ebea785b758bf7b2399605",
   "reviewer": "director independent agent",
-  "version": "v3-stills",
+  "version": "v3-master-sampled-motion",
   "overall_status": "not-verified",
   "static_layout_score": 8.5,
   "static_rig_score": 8.6,
   "raw_environment_art_score": 8.8,
   "limitations": [
-    "MP4 final ainda não inspecionado por este revisor.",
-    "Notas estáticas editoriais subjetivas não são média audiovisual por cena.",
-    "Sem escuta perceptual: métricas técnicas não comprovam naturalidade ou mixagem.",
-    "Não foi comprovada equivalência ao acabamento de Kurzgesagt."
+    "88 temporal image samples reviewed; continuous playback and all2064frames not reviewed.",
+    "Word-level perceptual synchronization and sound listening remain not verified.",
+    "Temporal sheet timestamps are target times, with fps2 sampling/rounding offsets near cuts.",
+    "Acting uses point/hold/present poses and idle motion; complex object manipulation and lipsync not implemented.",
+    "Environment art mostly raster imagery with camera/layer motion.",
+    "No full audiovisual8.5per-scene approval or studio-equivalence claim."
   ],
   "scenes": [
     {
@@ -18,209 +20,265 @@
       "status": "not-verified",
       "score": null,
       "static_layout_score": 8.5,
-      "evidence_type": "still-and-source",
+      "evidence_type": "still-source-and-temporal-image-sequence",
       "evidence": [
         "frame-1.8.png",
         "sha256:dd824a9c8786dcaaa71f7a1a535ddb2dc3b2743bc7a49e27051c7602ca880c3e",
-        "Três potes e pergunta legíveis; contato do pote na mão; pés apoiados na bancada."
+        "Três potes e pergunta legíveis; contato do pote na mão; pés apoiados na bancada.",
+        "motion-00.jpg",
+        "sheet-sha256:a9cd9478a40615b3b5fe38f74bed4fe4ba627db442e9093ed8bed840fa30da97"
       ],
       "defects": [],
       "rechecked": true,
       "pending": [
-        "motion",
         "perceptual-word-alignment",
-        "sound-listening"
-      ]
+        "sound-listening",
+        "continuous-playback-full-motion-quality"
+      ],
+      "sampled_motion_status": "no-blockers-observed"
     },
     {
       "id": "01",
       "status": "not-verified",
       "score": null,
       "static_layout_score": 8.5,
-      "evidence_type": "still-and-source",
+      "evidence_type": "still-source-and-temporal-image-sequence",
       "evidence": [
         "frame-5.8.png",
         "sha256:d941dac2b7a1dea437b0a5ccc6245538e1d622157e1d146f3eefb2459ac28d1a",
-        "Três funções separadas com código visual coerente; apoio corrigido na bancada."
+        "Três funções separadas com código visual coerente; apoio corrigido na bancada.",
+        "motion-01.jpg",
+        "sheet-sha256:9ed23a5427f7ea4cc764388acc89bd4238f47e928c3dbb49854ac3e1ca71c08e"
       ],
       "defects": [],
       "rechecked": true,
       "pending": [
-        "motion",
         "perceptual-word-alignment",
-        "sound-listening"
-      ]
+        "sound-listening",
+        "continuous-playback-full-motion-quality"
+      ],
+      "sampled_motion_status": "no-blockers-observed"
     },
     {
       "id": "02",
       "status": "not-verified",
       "score": null,
       "static_layout_score": 8.5,
-      "evidence_type": "still-and-source",
+      "evidence_type": "still-source-and-temporal-image-sequence",
       "evidence": [
         "frame-13.4.png",
         "sha256:f487c8aa34e987872355c07a32ee55579519430a0d58c3ec92e849dd2d730e64",
-        "Gotas e fibra legíveis; texto curto; plataforma sob os pés."
+        "Gotas e fibra legíveis; texto curto; plataforma sob os pés.",
+        "motion-02.jpg",
+        "sheet-sha256:f91645864401542d26e5b3115ca2b7383be863222d7dff5b6d57c72f044039c5"
       ],
       "defects": [],
       "rechecked": true,
       "pending": [
-        "motion",
         "perceptual-word-alignment",
-        "sound-listening"
-      ]
+        "sound-listening",
+        "continuous-playback-full-motion-quality"
+      ],
+      "sampled_motion_status": "no-blockers-observed"
     },
     {
       "id": "03",
       "status": "not-verified",
       "score": null,
       "static_layout_score": 8.5,
-      "evidence_type": "still-and-source",
+      "evidence_type": "still-source-and-temporal-image-sequence",
       "evidence": [
         "frame-19.5.png",
         "sha256:07f15b1f8851e6f53f13b99123feb7a5f9ace337fca4fbbf29bb8080137331d7",
-        "Frasco conta-gotas elimina pseudoquímica e ambiguidade do balde."
+        "Frasco conta-gotas elimina pseudoquímica e ambiguidade do balde.",
+        "motion-03.jpg",
+        "sheet-sha256:6951260f84d53ae6356475a28bbfe26b7d1faa340feb7acd615a7f99cce89ee0"
       ],
       "defects": [],
       "rechecked": true,
       "pending": [
-        "motion",
         "perceptual-word-alignment",
-        "sound-listening"
-      ]
+        "sound-listening",
+        "continuous-playback-full-motion-quality"
+      ],
+      "sampled_motion_status": "no-blockers-observed"
     },
     {
       "id": "04",
       "status": "not-verified",
       "score": null,
       "static_layout_score": 8.5,
-      "evidence_type": "still-and-source",
+      "evidence_type": "still-source-and-temporal-image-sequence",
       "evidence": [
         "frame-24.5.png",
         "sha256:8596dbc30c3563e9f45502bda0e31dc24aad6cf9000265856957a7242fd8aa69",
-        "Fibras menores com escamas/sombra e margem direita; menos texto."
+        "Fibras menores com escamas/sombra e margem direita; menos texto.",
+        "motion-04.jpg",
+        "sheet-sha256:1f94e51de9cdff97bdda726f2ea571be8a967a6af6f2d3e5aa718fb7825be582"
       ],
       "defects": [],
       "rechecked": true,
       "pending": [
-        "motion",
         "perceptual-word-alignment",
-        "sound-listening"
-      ]
+        "sound-listening",
+        "continuous-playback-full-motion-quality"
+      ],
+      "sampled_motion_status": "no-blockers-observed"
     },
     {
       "id": "05",
       "status": "not-verified",
       "score": null,
       "static_layout_score": 8.5,
-      "evidence_type": "still-and-source",
+      "evidence_type": "still-source-and-temporal-image-sequence",
       "evidence": [
         "frame-30.png",
         "sha256:65d00157238136102501bc4aa7625c06160a8dfa97c1e6183ec3fcd7337807b1",
-        "Dose e pote distinguíveis; texto curto; pote na mão."
+        "Dose e pote distinguíveis; texto curto; pote na mão.",
+        "motion-05.jpg",
+        "sheet-sha256:2f95b545f3487841835cde18a0a02cdd2c8cbd963f75e299ed6b0f1226030939"
       ],
       "defects": [],
       "rechecked": true,
       "pending": [
-        "motion",
         "perceptual-word-alignment",
-        "sound-listening"
-      ]
+        "sound-listening",
+        "continuous-playback-full-motion-quality"
+      ],
+      "sampled_motion_status": "no-blockers-observed"
     },
     {
       "id": "06",
       "status": "not-verified",
       "score": null,
       "static_layout_score": 8.5,
-      "evidence_type": "still-and-source",
+      "evidence_type": "still-source-and-temporal-image-sequence",
       "evidence": [
         "frame-37.3.png",
         "sha256:9ff357212a642607192e4268ad41d719cbef3155f8a2f91595b582494844f298",
-        "Proteínas identificáveis e fibra menor; rig apoiado."
+        "Proteínas identificáveis e fibra menor; rig apoiado.",
+        "motion-06.jpg",
+        "sheet-sha256:afdeec5c731cb3b5df47d15b2836e2d7c39e483cc6cfaa8b04471d8bb701a9c9"
       ],
       "defects": [],
       "rechecked": true,
       "pending": [
-        "motion",
         "perceptual-word-alignment",
-        "sound-listening"
-      ]
+        "sound-listening",
+        "continuous-playback-full-motion-quality"
+      ],
+      "sampled_motion_status": "no-blockers-observed"
     },
     {
       "id": "07",
       "status": "not-verified",
       "score": null,
       "static_layout_score": 8.5,
-      "evidence_type": "still-and-source",
+      "evidence_type": "still-source-and-temporal-image-sequence",
       "evidence": [
         "frame-44.8.png",
         "sha256:6a15c445820790718d61328dc26540804b075fbbab2faa2b46b51a85c526e1d1",
-        "Bifurcação permanece aberta; temporariedade inequívoca."
+        "Bifurcação permanece aberta; temporariedade inequívoca.",
+        "motion-07.jpg",
+        "sheet-sha256:e981e3910bf83c32c23d193daa9b3f71efe21fd8349a5160a58ab888e11e9cb7"
       ],
       "defects": [],
       "rechecked": true,
       "pending": [
-        "motion",
         "perceptual-word-alignment",
-        "sound-listening"
-      ]
+        "sound-listening",
+        "continuous-playback-full-motion-quality"
+      ],
+      "sampled_motion_status": "no-blockers-observed"
     },
     {
       "id": "08",
       "status": "not-verified",
       "score": null,
       "static_layout_score": 8.5,
-      "evidence_type": "still-and-source",
+      "evidence_type": "still-source-and-temporal-image-sequence",
       "evidence": [
         "frame-50.4.png",
         "sha256:2dde24e6d27e62733fb3fe183ab6855760c45379f0cc87aee2bf979c0e508494",
-        "Um pote como alvo central; instrução curta."
+        "Um pote como alvo central; instrução curta.",
+        "motion-08.jpg",
+        "sheet-sha256:aa8c7adb953d84cc0ee87b28648f07eccaeb954bbbc5197585d417e8505d28db"
       ],
       "defects": [],
       "rechecked": true,
       "pending": [
-        "motion",
         "perceptual-word-alignment",
-        "sound-listening"
-      ]
+        "sound-listening",
+        "continuous-playback-full-motion-quality"
+      ],
+      "sampled_motion_status": "no-blockers-observed"
     },
     {
       "id": "09",
       "status": "not-verified",
       "score": null,
       "static_layout_score": 8.5,
-      "evidence_type": "still-and-source",
+      "evidence_type": "still-source-and-temporal-image-sequence",
       "evidence": [
         "frame-57.png",
         "sha256:a7712e928fc5ca9d86f72682f97de43aa00b3dc582575ff2ffaa155863b433cf",
-        "Modo de uso integrado ao verso de frasco, hierarquia nítida."
+        "Modo de uso integrado ao verso de frasco, hierarquia nítida.",
+        "motion-09.jpg",
+        "sheet-sha256:92bc0d38d811b17dcd41e910fe9c1be25c77e295dd449a1efd34b1af92dfd737"
       ],
       "defects": [],
       "rechecked": true,
       "pending": [
-        "motion",
         "perceptual-word-alignment",
-        "sound-listening"
-      ]
+        "sound-listening",
+        "continuous-playback-full-motion-quality"
+      ],
+      "sampled_motion_status": "no-blockers-observed"
     },
     {
       "id": "10",
       "status": "not-verified",
       "score": null,
       "static_layout_score": 8.5,
-      "evidence_type": "still-and-source",
+      "evidence_type": "still-source-and-temporal-image-sequence",
       "evidence": [
         "frame-65.8.png",
         "sha256:bce6ca1d45fb3b46506374db76848836c0d772e705157100c25d9c2b5ee8f3ec",
-        "CTA cabe no badge, rosto feliz e bancada dão fechamento."
+        "CTA cabe no badge, rosto feliz e bancada dão fechamento.",
+        "motion-10.jpg",
+        "sheet-sha256:cc3f136ed35d952e47aed83732bdb5d50ebae1dedf13c663ccd4380ff3dd85ed"
       ],
       "defects": [],
       "rechecked": true,
       "pending": [
-        "motion",
         "perceptual-word-alignment",
-        "sound-listening"
-      ]
+        "sound-listening",
+        "continuous-playback-full-motion-quality"
+      ],
+      "sampled_motion_status": "no-blockers-observed"
     }
-  ]
+  ],
+  "render_file": "renders/beleza-01-tall-tale.mp4",
+  "review_scope": "11 temporal sheets, 8 samples each; still images and source; no perceptual audio listening",
+  "sampled_structural_motion_status": "no-blockers-observed",
+  "audio_score": null,
+  "audio_technical_report": {
+    "mean_db": -21.9,
+    "max_db": -5.6,
+    "clipping_reported": false,
+    "evidence": "producer-measurement",
+    "perceptual_listening": "not-verified"
+  },
+  "master_sha256": "1c4fe6f9f277a0a1f31a92d086dd6a9fc9d04c03bf1008b2559050094f58b582",
+  "delivery": {
+    "duration": 68.8,
+    "dimensions": [
+      1080,
+      1920
+    ],
+    "fps": 30,
+    "bytes": 31773030,
+    "encoding": "H264/AAC share export",
+    "same_frames_as_master": true
+  }
 }

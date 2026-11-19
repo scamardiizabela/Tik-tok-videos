@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "source_commit": "68dd15a",
+  "source_commit": "39c2100",
   "delivery": "Assets and rendered media are delivered privately; this public manifest contains metadata only.",
   "files": [
     {
@@ -257,6 +257,12 @@
       "path": "projects/beleza-01-tall-tale/review/frame-65.8.png",
       "git_blob_sha": "696b50e99f4f6774d42222d6a883866cbb4b963d",
       "size_bytes": 1364961
+    },
+    {
+      "path": "projects/beleza-01-tall-tale/renders/beleza-01-tall-tale.mp4",
+      "size_bytes": 31773030,
+      "git_blob_sha": "81af8b8fd1015fa2d1611b2bd7860cc2eaf6c870",
+      "sha256": "82e1c1dd916e081f76e10770754d7fa20000f27d21ebea785b758bf7b2399605"
     }
   ]
 }

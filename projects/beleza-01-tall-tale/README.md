@@ -32,9 +32,7 @@ O render usa Chromium; ajustar `REMOTION_BROWSER_EXECUTABLE` se necessário. Pro
 
 ## Estado
 
-Produção em andamento. Não considerar renders aprovados antes do relatório do diretor. Assets gerados são arte conceitual e ilustrativa, não prova de eficácia de cosméticos.
+Vídeo produzido e revisado por amostragem temporal (88 quadros em 11 cenas). Sem bloqueadores estruturais identificados na amostra. A nota editorial estática de layout é 8,5; isso não certifica nota audiovisual integral. A escuta perceptual não foi verificada. Imagens/áudio/MP4 são entregues em pacote privado; este repositório publica código e documentação legíveis. Assets gerados são arte conceitual e ilustrativa, não prova de eficácia de cosméticos.
 
 
-### Disponibilidade dos assets
-
-Esta branch contém código e metadados. Os assets e mídia novos são fornecidos na entrega privada do projeto completo. Confira `../../asset-manifest.json` e restaure os arquivos nos caminhos listados antes de renderizar. Não há processo automático de download/materialização nesta branch.
+Os assets e mídia novos desta versão são fornecidos privadamente com o projeto completo. Esta branch mantém código legível e metadados de integridade em `../../asset-manifest.json`, sem workflow de materialização nem chunks binários.
