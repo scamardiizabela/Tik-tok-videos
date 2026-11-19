@@ -8,6 +8,7 @@ Feedback real: personagem rígida, movimento artificial, braço apontador inadeq
 - Locução substituída por Juliana (ElevenLabs, eleven_v4), primeira tomada f57PU7YOFFdNKErnXuXA. Duração de áudio76,56s. Voz sintética; não é gravação humana.
 - Timings reais por palavra da nova locução via Scribe v1 em words-v2.json. Cortes em timeline-v2.json.
 - Máscara de extração corrigida para preservar pigmento dos lábios; remoção de fringe somente conectada ao exterior.
+- Mix final normalizada em -16 LUFS / teto de pico verdadeiro -1,5 dB, sem recodificar a imagem.
 - Trilha e efeitos originais refeitos para os novos cortes. Movimento de parallax contínuo por plano.
 
 ## Validação e limites

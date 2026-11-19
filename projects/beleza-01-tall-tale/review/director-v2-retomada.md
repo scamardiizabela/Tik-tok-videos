@@ -49,3 +49,11 @@ Permanecem não verificados por este revisor: qualidade perceptual da nova voz, 
 ## Complemento — amostra temporal final
 
 Examinei também `v2/motion-final.jpg`: treze quadros de 14,1 a 16,5 s, em passos de 0,2 s, já no enquadramento final. O braço parte de repouso, antecipa, dobra o cotovelo e aponta para a região do fio; não observei separação entre manga/antebraço. O olhar passa da câmera para a explicação. A imagem de 15,9 s mostra a sobreposição da transição entre duas expressões; ela suaviza a troca mas não constitui deformação facial ou animação labial. A folha `v2/contact-final.jpg` foi examinada integralmente e é compatível com os onze planos individuais revisados. Não encontrei regressão de legibilidade nessa amostra adicional.
+
+## Conferência do master exportado
+
+Examinei integralmente a folha `master-v2/contact.jpg`, extraída diretamente do MP4 final em doze tempos: 1,8 / 8 / 16 / 23 / 29 / 36 / 44 / 52 / 58 / 66 / 74 / 76,9 s. Não observei regressão de composição, articulação ou legibilidade em relação aos planos corrigidos. O encerramento de 76,9 s mantém a protagonista, os três potes e o CTA; não mostra quadro preto ou corte incompleto nessa amostra. A frase de legenda pode desaparecer após o fim da fala, preservando o CTA visual.
+
+Arquivo: `renders/beleza-01-v2.mp4`. SHA-256 calculado localmente: `81854f0ac6a3cae10b98d87700e415a32f49dc20740757bf0b37dc6ea1d10f5e`.
+
+O produtor informou decodificação integral sem erros e formato 1080×1920, 30 fps, 2316 quadros, duração de contêiner 77,205 s. Esses dados técnicos não substituem escuta perceptual ou revisão de todos os quadros. Resultado desta revisão independente: sem bloqueador visual observado nas amostras do master; qualidade sonora e aprovação audiovisual integral continuam não verificadas por este revisor.

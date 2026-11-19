@@ -11,7 +11,7 @@ node render-v2.cjs --stills=1.8,8,16,23,29,36,44,52,58,66,74
 node render-v2.cjs
 ```
 
-A extração usa Pillow, numpy e scipy. O arquivo words-v2.json contém os tempos reais da nova voz; timeline-v2.json define cortes e duração. A voz está em public/audio/narration-v2.mp3. Render em renders/beleza-01-v2.mp4. Leia review/changelog.md para mudanças e limites. A revisão anterior segue registrada abaixo como histórico.
+A extração usa Pillow, numpy e scipy. O arquivo words-v2.json contém os tempos reais da nova voz; timeline-v2.json define cortes e duração. A voz está em public/audio/narration-v2.mp3. Render em renders/beleza-01-v2.mp4 e versão com áudio normalizado em renders/beleza-01-v2-master.mp4. Leia review/changelog.md para mudanças e limites. A revisão anterior segue registrada abaixo como histórico.
 
 ---
 # Episódio 01 — Hidratação, nutrição e reconstrução
